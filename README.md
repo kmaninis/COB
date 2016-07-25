@@ -1,7 +1,10 @@
-# Convolutional Oriented Boundaries (COB) : Perceptual Grouping Beyond the BSDS
-This is the Convolutional Oriented Boundaries (COB) implementation. COB is a technique that produces multiscale oriented contours and region hierarchies, starting from generic image classification CNNs. COB is computationally efficient, because it requires a single CNN forward pass for multiscale contour detection and uses a novel sparse boundary representation for hierarchical segmentation; it gives a significant leap in performance over the state-of-the-art and it generalizes very well to unseen categories and datasets. Particularly, we show that learning to estimate not only contour strength but also contour orientation provides more accurate results. We also conclude that our architectures do not require contour globalization, which was one of the speed bottlenecks in existing approaches. The whole pipeline runs in the order of 0.8 seconds per image to produce state-of-the-art hierarchical boundaries.
+# COB: Convolutional Oriented Boundaries
 
 ![COB](doc/ims/COB.png)
+
+COB is a technique that produces multiscale oriented contours and region hierarchies from a single forward pass of a generic image classification CNN. The whole pipeline runs in the order of 0.8 seconds per image to produce state-of-the-art hierarchical boundaries.
+
+Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation) for pre-computed results (on BSDS500, PASCAL, SBD, COCO, Imagenet, etc.), public benchmarks, results visualization, and additional information.
 
 ### Prerequisites:
  - Install [this](https://github.com/s9xie/hed) version of Caffe along with standard dependencies and matcaffe.
@@ -17,7 +20,7 @@ This is the Convolutional Oriented Boundaries (COB) implementation. COB is a tec
 
 For more information on how to use the code, please read README.txt
  
-### Citations:
+### Citation:
 If you use this code, please consider citing the following paper:
 
 	@Inproceedings{Man+16a,
@@ -28,6 +31,5 @@ If you use this code, please consider citing the following paper:
 	}
 
 If you encounter any problems with the code, please contact the first author.
-For pre-computed results on BSDS500, PASCAL, SBD, and COCO, as well as additional information, please visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation).
 
 Enjoy!
