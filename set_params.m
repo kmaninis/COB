@@ -33,10 +33,13 @@ if ~evalin('base','exist(''cob_params'',''var'')')
     
     % Network model
     cob_params.model = fullfile(cob_root,'models','deploy.prototxt');
-
+    
     % Network weights
     cob_params.weights = fullfile(cob_root,'models','COB_PASCALContext_trainval.caffemodel');
-
+    if ~exist(cob_params.weights,'file')
+        error('a:b',['caffemodel file ''' cob_params.weights ''' not found.\nPlease visit ''http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/code.html'' to download it.'])
+    end
+    
     % Create net and load weights
     cob_params.net = caffe.Net(cob_params.model, cob_params.weights, 'test'); 
     
