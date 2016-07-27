@@ -22,7 +22,7 @@ if ~exist('database','var')
     database = 'PASCALContext';
 end
 if ~exist('gt_set','var')
-    gt_set = 'test_new';
+    gt_set = 'voc_test';
 end
 if ~exist('compute_proposals','var')
     compute_proposals = 0;
