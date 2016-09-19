@@ -17,7 +17,7 @@
 % Dependencies needed to build: Boost C++ libraries (http://www.boost.org)
 %
 % The code contains C++11 functionality, so you have to use a compiler that
-% supports the flag -std=c++11.C
+% supports the flag -std=c++11.
 % Some help on how to do it in: http://jponttuset.github.io/matlab2014-mex-flags/
 % ------------------------------------------------------------------------
 function build()
@@ -35,6 +35,7 @@ else
 end
 include{3} = fullfile(cob_root, 'src', 'external','piotr_toolbox'); % To build Piotr toolbox
 include{4} = fullfile(cob_root, 'src', 'external'); % To build Piotr toolbox
+include{5} = fullfile(cob_root, 'src', 'orient_edges'); % To get seg2contourlist
 
 include_str = '';
 for ii=1:length(include)
@@ -58,6 +59,7 @@ build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_cands2labels.
 build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_ucm_align.cpp');
 build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_ucm_rescale.cpp');
 build_file{end+1} = fullfile(cob_root, 'src', 'external'     ,'paretofront','paretofront.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'orient_edges' ,'mex_seg2contourlist.cpp');
 
 %% Define the compiler
 gcc_compiler = 'g++';
