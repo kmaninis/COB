@@ -51,17 +51,17 @@ build_file{end+1} = fullfile(cob_root, 'src', 'proposals'    ,'mex_get_tree_cand
 build_file{end+1} = fullfile(cob_root, 'src', 'proposals'    ,'mex_prune_tree_to_regions.cpp');
 build_file{end+1} = fullfile(cob_root, 'src', 'proposals'    ,'mex_max_margin.cpp');
 build_file{end+1} = fullfile(cob_root, 'src', 'proposals'    ,'mex_hole_filling.cpp');
-build_file{end+1} = fullfile(cob_root, 'src', 'misc'          ,'mex_intersect_hierarchies.cpp');
-build_file{end+1} = fullfile(cob_root, 'src', 'misc'          ,'mex_ucm2hier.cpp');
-build_file{end+1} = fullfile(cob_root, 'src', 'misc'          ,'mex_cands2masks.cpp');
-build_file{end+1} = fullfile(cob_root, 'src', 'misc'          ,'mex_cands2labels.cpp');
-build_file{end+1} = fullfile(cob_root, 'src', 'misc'          ,'mex_ucm_align.cpp');
-build_file{end+1} = fullfile(cob_root, 'src', 'misc'          ,'mex_ucm_rescale.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_intersect_hierarchies.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_ucm2hier.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_cands2masks.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_cands2labels.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_ucm_align.cpp');
+build_file{end+1} = fullfile(cob_root, 'src', 'misc'         ,'mex_ucm_rescale.cpp');
 build_file{end+1} = fullfile(cob_root, 'src', 'external'     ,'paretofront','paretofront.cpp');
 
 %% Define the compiler
 gcc_compiler = 'g++';
-gcc_string = ['GCC=''' gcc_compiler ''' '];
+gcc_string = ['GCC=''', gcc_compiler, ''' ', 'CXXFLAGS=''', '-std=c++11 -fPIC', ''' '];
 
 %% Build everything
 if ~exist(fullfile(cob_root, 'lib'),'dir')
