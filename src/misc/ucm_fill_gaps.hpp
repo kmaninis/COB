@@ -1,16 +1,15 @@
 // ------------------------------------------------------------------------ 
 //  Copyright (C)
-//  Universitat Politecnica de Catalunya BarcelonaTech (UPC) - Spain
-//  University of California Berkeley (UCB) - USA
+//  ETH Zurich - Switzerland
 // 
-//  Jordi Pont-Tuset <jordi.pont@upc.edu>
-//  Pablo Arbelaez <arbelaez@berkeley.edu>
-//  June 2014
+//  Kevis-Kokitsi Maninis <kmaninis@vision.ee.ethz.ch>
+//  Jordi Pont-Tuset <jponttuset@vision.ee.ethz.ch>
+//  July 2016
 // ------------------------------------------------------------------------ 
-// This file is part of the MCG package presented in:
-//    Arbelaez P, Pont-Tuset J, Barron J, Marques F, Malik J,
-//    "Multiscale Combinatorial Grouping,"
-//    Computer Vision and Pattern Recognition (CVPR) 2014.
+// This file is part of the COB package presented in:
+//    K.K. Maninis, J. Pont-Tuset, P. Arbelaez and L. Van Gool 
+//    Convolutional Oriented Boundaries
+//    European Conference on Computer Vision (ECCV), 2016 
 // Please consider citing the paper if you use this code.
 // ------------------------------------------------------------------------
 #ifndef UCM_FILL_GAPS_HPP
