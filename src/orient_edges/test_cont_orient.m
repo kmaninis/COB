@@ -18,7 +18,7 @@ partition = db_gt('BSDS500','12003');
 partition = partition{1};
 
 % Get the orientations of the contours
-contour_list = cont_orient(partition);
+[contour_list, ori_map, ori_quant] = cont_orient(partition);
 
 %% Show the results
 r = 5;
@@ -26,17 +26,16 @@ space = 10;
 imshow(seg2bmap(partition),[])
 hold on
 
+X=[];Y=[];U=[];V=[];
 for ii=1:length(contour_list)
     for jj=1:space:length(contour_list(ii).orient)
-        quiver((contour_list(ii).contour_coords(jj,2)+1)/2,...
-               (contour_list(ii).contour_coords(jj,1)+1)/2,...
-               r*cos(contour_list(ii).orient(jj)),...
-               r*sin(contour_list(ii).orient(jj)),'r')
-        quiver((contour_list(ii).contour_coords(jj,2)+1)/2,...
-               (contour_list(ii).contour_coords(jj,1)+1)/2,...
-               -r*cos(contour_list(ii).orient(jj)),...
-               -r*sin(contour_list(ii).orient(jj)),'r')
+        X=[X, (contour_list(ii).contour_coords(jj,2)+1)/2];
+        Y=[Y, (contour_list(ii).contour_coords(jj,1)+1)/2];
+        U=[U, r*cos(contour_list(ii).orient(jj))];
+        V=[V, r*sin(contour_list(ii).orient(jj))];
     end
     ii; 
 end
+
+quiver(X,Y,U,V,0,'r.'); quiver(X,Y,-U,-V,0,'r.');
 
