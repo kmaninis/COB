@@ -37,7 +37,7 @@ for ii=1:length(contour_list_simpl)
     % Sweep all contour pixels
     curr_pos = 1;
     contour_list(ii).orient = zeros(size(contour_list(ii).contour_coords,1),1);
-    for jj=1:length(contour_list_simpl(ii).contour_coords)-1
+    for jj=1:size(contour_list_simpl(ii).contour_coords,1)-1
 
         % Current segment points
         x0 = round(contour_list_simpl(ii).contour_coords(jj,1));
