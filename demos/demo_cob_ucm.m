@@ -11,7 +11,7 @@ I = imread(fullfile(cob_root, 'demos','2010_005731.png'));
 % Run COB. For an image of PASCALContext, it should take:
 %  - less than 1s on the GPU
 %  - around 8s on the CPU
-tic; [ucm2,ucms,~,O] = im2ucm(I); toc;
+tic; [ucm2,ucms,~,O, E] = im2ucm(I); toc;
 
 % Display result
 figure;

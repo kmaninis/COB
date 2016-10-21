@@ -23,6 +23,7 @@
 %  - O.angle  : Contour orientations at each pixel
 %    O.conf   : Confidence of each pixel being in one of the 8 bins of
 %               orientation
+%  - E        : Edges (coarse and fine)
 %
 %  DEMO:
 %  - See demos/demo_cob_ucm.m
@@ -31,11 +32,11 @@
 %  - If you are also going to compute the proposals, you can reuse the
 %    UCM returned by im2prop
 % ------------------------------------------------------------------------
-function [ucm2, ucms, times, O] = im2ucm(image)
+function [ucm2, ucms, times, O, E] = im2ucm(image)
 
 % Adjust your paths and parameters in this file
 cob_params = set_params(); 
 
 % Get the hierarchies at each scale and the global hierarchy
-[ucm2, ucms, times,O] = img2ucms(image, cob_params);
+[ucm2, ucms, times, O, E] = img2ucms(image, cob_params);
 

@@ -12,7 +12,7 @@
 %    European Conference on Computer Vision (ECCV), 2016 
 % Please consider citing the paper if you use this code.
 % ------------------------------------------------------------------------
-function [ucm2, ucms, times, O] = img2ucms(I, cob_parameters)
+function [ucm2, ucms, times, O, E] = img2ucms(I, cob_parameters)
 
 if size(I,3)==1 % Grayscale image
     I = cat(3,I,I,I);
@@ -32,7 +32,7 @@ param = cob_parameters.other_param;
 [param.tx, param.ty, ~] = size(I);
 
 % Compute ucms at multiple scales
-[ucms_pre, tm, O] = img2ucm_scale_fast(cob_parameters.net, I, param);
+[ucms_pre, tm, O, E] = img2ucm_scale_fast(cob_parameters.net, I, param);
 tmp_times.im2ucm = tm;
 
 % Align ucms
@@ -51,7 +51,7 @@ tmp_times.ucms2multi=toc(T);
 times.boundaries = tmp_times.im2ucm.edge_detect;
 times.ucms       = tmp_times.im2ucm.ucm + tmp_times.project_ucms_wrap + tmp_times.ucms2multi;
 
-function [ucm2, times, O] = img2ucm_scale_fast(net, I, param)
+function [ucm2, times, O, E] = img2ucm_scale_fast(net, I, param)
 
 
 % Detect multiscale contours with a single fw pass
