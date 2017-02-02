@@ -5,6 +5,9 @@ IMPORTANT
   1. Model trained on PASCALContext train (VOC train) set https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip
   2. Model trained on PASCALContext trainval set (VOC train + val) https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_trainval.zip
   3. Model trained on BSDS500 trainval set https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_BSDS500.zip
+  4. Model trained on NYUD-v2 train set (for RGB-D boundary detection) https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip
+  5. Model trained on PASCAL Segmentation 2012 train set (for Object Boundary Detection) https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip
+
 
 FIRST INSTALL
 - Change datasets/database_root_dir.m to point to your PASCALContext folder (the one with subfolders ImageSets, JPEGImages, etc.) or the BSDS or COCO folders

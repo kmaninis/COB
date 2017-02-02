@@ -15,8 +15,8 @@ Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation
 ### Prerequisites:
  - Install [this](https://github.com/s9xie/hed) version of Caffe along with standard dependencies and matcaffe.
  - The CNN models of COB to reproduce the results of this paper are available. Download them and put them under `models/`:
-  1. Model trained on PASCALContext `train` set (*VOC train*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
-  2. Model trained on PASCALContext `trainval` set (*VOC trainval*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_trainval.zip).
+  1. Model trained on PASCALContext `train` set (*VOC train*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_NYUD-v2_RGBHHA.zip).
+  2. Model trained on PASCALContext `trainval` set (*VOC trainval*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_SegVOC12.zip).
   3. Model trained on BSDS500 `trainval` set [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_BSDS500.zip).
 
 ####Note: In the paper, we split the original val set of PASCALContext into *VOC val* and *VOC test* sets, while keeping the original training set as is (*VOC train*). *VOC val* was selected not to overlap with SBD val set.

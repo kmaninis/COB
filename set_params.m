@@ -23,13 +23,13 @@ if ~evalin('base','exist(''cob_params'',''var'')')
     disp('Setting COB parameters')
     
     % For CPU mode, set to 0
-    cob_params.useGPU = 0;
+    cob_params.useGPU = 1;
     
     % Set the ID of your GPU (default 0)
     cob_params.gpu_id = 0;
     
     % Specify /path/to/caffe (needed for matcaffe)
-    cob_params.caffe_path = '/scratch_net/reinhold_second/test/hed_cpu/matlab/';
+    cob_params.caffe_path = '/path/to/caffe/matlab/';
     if ~exist(cob_params.caffe_path,'dir')
         error(['Caffe path ''' cob_params.caffe_path ''' not found'])
     end
