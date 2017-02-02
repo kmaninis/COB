@@ -6,6 +6,12 @@ COB is a technique that produces multiscale oriented contours and region hierarc
 
 Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation) for pre-computed results (on `BSDS500`, `PASCAL`, `SBD`, `MS-COCO`, `ImageNet`, etc.), public benchmarks, results visualization, and additional information.
 
+### Update:
+ - We have extended the ECCV paper with more experiments for RGB-D boundary detection, object boundary detection, as well as experiments that combine COB with high-level tasks that include Semantic Contours, Semantic Segmentation, Object Detection, and Segmented/Box Proposals. You can additionally download:
+  1. Model trained on NYUD-v2 `train` set (for RGB-D boundary detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
+  2. Model trained on PASCAL Segmentation 2012 `train` set (for Object Boundary Detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
+  3. All additional results from our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation/code.html)
+  
 ### Prerequisites:
  - Install [this](https://github.com/s9xie/hed) version of Caffe along with standard dependencies and matcaffe.
  - The CNN models of COB to reproduce the results of this paper are available. Download them and put them under `models/`:
@@ -23,7 +29,7 @@ Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation
 For more information on how to use the code, please read `README.txt`
  
 ### Citation:
-If you use this code, please consider citing the following paper:
+If you use this code, please consider citing the following papers:
 
 	@Inproceedings{Man+16a,
 	  Title          = {Convolutional Oriented Boundaries},
@@ -32,6 +38,13 @@ If you use this code, please consider citing the following paper:
 	  Year           = {2016}
 	}
 
+	@Article{Maninis2017,
+	  Author = {K.K. Maninis and J. Pont-Tuset and P. Arbel\'{a}ez and L. Van Gool},
+	  Title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
+	  Journal = {arXiv:1701.04658},
+	  Year = {2017}
+	}
+	
 If you encounter any problems with the code, please contact the first author.
 
 Enjoy!

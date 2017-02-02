@@ -68,7 +68,7 @@ for s=1:n_scales
     [owt2, superpixels] = contours2OWT(E{s}, O.angle);
     
     % Globalization
-    if param.glob,
+    if param.glob
         [ sPb_thin] = spectralPb_fast(owt2 * param.mult_Pb, param.nvec, param.ic_gamma, param.dthresh) / param.sat_sPb;
     end
     

@@ -35,7 +35,7 @@
 function [ucm2, ucms, times, O, E] = im2ucm(image)
 
 % Adjust your paths and parameters in this file
-cob_params = set_params(); 
+cob_params = set_params(image); 
 
 % Get the hierarchies at each scale and the global hierarchy
 [ucm2, ucms, times, O, E] = img2ucms(image, cob_params);

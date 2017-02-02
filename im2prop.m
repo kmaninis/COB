@@ -50,7 +50,7 @@ J_th = 0.95;
 theta = 0.7;
 
 % Adjust your paths and parameters in this file
-cob_params = set_params();
+cob_params = set_params(image);
 
 % Get the hierarchies at each scale and the global hierarchy
 [ucm2, ucms, times] = img2ucms(image, cob_params);
