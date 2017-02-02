@@ -10,7 +10,7 @@ Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation
  - We have extended the ECCV paper with more experiments for RGB-D boundary detection, object boundary detection, as well as experiments that combine COB with high-level tasks that include Semantic Contours, Semantic Segmentation, Object Detection, and Segmented/Box Proposals. You can additionally download:
   1. Model trained on NYUD-v2 `train` set (for RGB-D boundary detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
   2. Model trained on PASCAL Segmentation 2012 `train` set (for Object Boundary Detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
-  3. All additional results from our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation/code.html)
+  3. All additional results from our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/code.html)
   
 ### Prerequisites:
  - Install [this](https://github.com/s9xie/hed) version of Caffe along with standard dependencies and matcaffe.
