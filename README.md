@@ -8,15 +8,15 @@ Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation
 
 ### Update:
  - We have extended the ECCV paper with more experiments for RGB-D boundary detection, object boundary detection, as well as experiments that combine COB with high-level tasks that include Semantic Contours, Semantic Segmentation, Object Detection, and Segmented/Box Proposals. You can additionally download:
-  1. Model trained on NYUD-v2 `train` set (for RGB-D boundary detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
-  2. Model trained on PASCAL Segmentation 2012 `train` set (for Object Boundary Detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
+  1. Model trained on NYUD-v2 `train` set (for RGB-D boundary detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_NYUD-v2_RGBHHA.zip).
+  2. Model trained on PASCAL Segmentation 2012 `train` set (for Object Boundary Detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_SegVOC12.zip).
   3. All additional results from our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/code.html)
   
 ### Prerequisites:
  - Install [this](https://github.com/s9xie/hed) version of Caffe along with standard dependencies and matcaffe.
  - The CNN models of COB to reproduce the results of this paper are available. Download them and put them under `models/`:
-  1. Model trained on PASCALContext `train` set (*VOC train*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_NYUD-v2_RGBHHA.zip).
-  2. Model trained on PASCALContext `trainval` set (*VOC trainval*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_SegVOC12.zip).
+  1. Model trained on PASCALContext `train` set (*VOC train*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_train.zip).
+  2. Model trained on PASCALContext `trainval` set (*VOC trainval*) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_PASCALContext_trainval.zip).
   3. Model trained on BSDS500 `trainval` set [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_BSDS500.zip).
 
 ####Note: In the paper, we split the original val set of PASCALContext into *VOC val* and *VOC test* sets, while keeping the original training set as is (*VOC train*). *VOC val* was selected not to overlap with SBD val set.
