@@ -38,11 +38,11 @@ If you use this code, please consider citing the following papers:
 	  Year           = {2016}
 	}
 
-	@Article{Maninis2017,
-	  Author = {K.K. Maninis and J. Pont-Tuset and P. Arbel\'{a}ez and L. Van Gool},
-	  Title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
-	  Journal = {arXiv:1701.04658},
-	  Year = {2017}
+	@Article{Man+17,
+	  Author 	 = {K.K. Maninis and J. Pont-Tuset and P. Arbel\'{a}ez and L. Van Gool},
+	  Title 	 = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
+	  Journal 	 = {arXiv:1701.04658},
+	  Year 		 = {2017}
 	}
 	
 If you encounter any problems with the code, please contact the first author.
