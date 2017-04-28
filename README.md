@@ -41,7 +41,7 @@ If you use this code, please consider citing the following papers:
 	@Article{Man+17,
 	  Author 	 = {K.K. Maninis and J. Pont-Tuset and P. Arbel\'{a}ez and L. Van Gool},
 	  Title 	 = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
-	  Journal 	 = {arXiv:1701.04658},
+	  Journal 	 = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
 	  Year 		 = {2017}
 	}
 	
