@@ -106,7 +106,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
     
     /* ---- Region table ---- */
     /* Allocate */
-    int dims_out[1]; 
+    mwSize dims_out[1]; 
     dims_out[0] = reg_table.size();
     plhs[1] = mxCreateCellArray(1, dims_out);
     

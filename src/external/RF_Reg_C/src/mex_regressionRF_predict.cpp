@@ -87,7 +87,7 @@ void mexFunction( int nlhs, mxArray *plhs[],
     int keepPred=(int)*((double*)mxGetData(prhs[10]));
 	double* allPred;
     
-    int dims_ntest[2];
+    mwSize dims_ntest[2];
     int ntest = n_size;
     int ndim = 2;
     

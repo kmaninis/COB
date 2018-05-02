@@ -25,7 +25,7 @@ void mexFunction( int nlhs, mxArray *plhs[] , int nrhs, const mxArray *prhs[] )
 	bool * front;
 	double * M;
 	unsigned int row, col;
-	const int  *dims;
+	const mwSize  *dims;
     
 	if(nrhs == 0 || nlhs > 1)
 	{
