@@ -8,7 +8,7 @@ Check our visit our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation
 
 ### Update:
  - We have extended the ECCV paper with more experiments for RGB-D boundary detection, object boundary detection, as well as experiments that combine COB with high-level tasks that include Semantic Contours, Semantic Segmentation, Object Detection, and Segmented/Box Proposals. You can additionally download:
-  1. Model trained on NYUD-v2 `train` set (for RGB-D boundary detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_NYUD-v2_RGBHHA.zip).
+  1. Model trained on NYUD-v2 `train` set (for RGB-D boundary detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_NYUD-v2_RGBHHA.zip). All images and ground truth associated to the NYUD-v2 database can be found [here](http://www.cs.berkeley.edu/~sgupta/eccv14/eccv14-data.tgz). We followed the experimental of [this](https://github.com/s-gupta/rcnn-depth) paper.
   2. Model trained on PASCAL Segmentation 2012 `train` set (for Object Boundary Detection) [Link](https://data.vision.ee.ethz.ch/kmaninis/share/COB/Downloads/COB_SegVOC12.zip).
   3. All additional results from our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/code.html)
   
